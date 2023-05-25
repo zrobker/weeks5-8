@@ -1,0 +1,85 @@
+// LOCALHOST
+### Get all contacts
+GET http://localhost:8080/contacts
+
+
+### Get contact by id
+GET http://localhost:8080/contacts/646062bc89498c47257effc5
+
+### Get contact by id
+GET http://localhost:8080/contacts/646062d689498c47257effc7
+
+### Get contact by id
+GET http://localhost:8080/contacts/646062e789498c47257effc9
+
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Cassie",
+    "lastName":"Adams",
+    "email":"cassieadams@test.com",
+    "favoriteColor":"Yellow",
+    "birthday":"04/12/87"
+}
+
+
+### PUT contact
+PUT http://localhost:8080/contacts/646062bc89498c47257effc5 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sarah",
+    "lastName":"Robker",
+    "email":"sarahrobker@test.com",
+    "favoriteColor":"Pink",
+    "birthday":"09/24/96"
+}
+### DELETE contact
+DELETE http://localhost:8080/contacts/646bf6c322eeb25a46c27217 HTTP/1.1
+
+---------------------------------------------------------------------------------
+
+// PRODUCTION Deploy
+### Get all contacts
+GET https://cse341-robker.onrender.com/contacts
+
+### Get contact by id
+GET https://cse341-robker.onrender.com/contacts/646062bc89498c47257effc5
+
+### Get contact by id
+GET https://cse341-robker.onrender.com/contacts/646062d689498c47257effc7
+
+### Get contact by id
+GET https://cse341-robker.onrender.com/contacts/646062e789498c47257effc9
+
+
+
+### Create contact
+POST https://cse341-robker.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Cassie",
+    "lastName":"Adams",
+    "email":"cassieadams@test.com",
+    "favoriteColor":"Yellow",
+    "birthday":"04/12/87"
+}
+
+
+### PUT contact
+PUT https://cse341-robker.onrender.com/contacts/646062bc89498c47257effc5 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sarah",
+    "lastName":"Robker",
+    "email":"sarahrobker@test.com",
+    "favoriteColor":"Pink",
+    "birthday":"09/24/96"
+}
+### DELETE contact
+DELETE https://cse341-robker.onrender.com/contacts/646bf6f21d995ccd0cdaea77 HTTP/1.1
