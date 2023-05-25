@@ -5,7 +5,7 @@
     "description": "Contact API",
     "version": "1.0.0"
   },
-  "host": "cse341-robker.onrender.com",
+  "host": "zr-weeks5-8.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
