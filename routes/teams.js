@@ -5,9 +5,9 @@ const teamsController = require('../controllers/teams');
 
 router.get('/', teamsController.getAll);
 
-router.get('/:teamName', teamsController.getSingle);
+// router.get('/:teamName', teamsController.getSingle);
 
-router.post('/:teamName', teamsController.createTeam);
+// router.post('/', teamsController.createTeam);
 
 // router.put('/:teamName', teamsController.updateTeam);
 

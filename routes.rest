@@ -4,7 +4,7 @@ GET http://localhost:8080/teams
 
 
 ### Get contact by id
-GET http://localhost:8080/teams/646062bc89498c47257effc5
+GET http://localhost:8080/teams/Steelers
 
 ### Get contact by id
 GET http://localhost:8080/teams/646062d689498c47257effc7
