@@ -7,9 +7,9 @@ router.get('/', teamsController.getAll);
 
 router.get('/:teamName', teamsController.getSingle);
 
-// router.post('/', teamsController.createContact);
+router.post('/:teamName', teamsController.createTeam);
 
-router.put('/:teamName', teamsController.updateTeam);
+// router.put('/:teamName', teamsController.updateTeam);
 
 // router.delete('/:id', teamsController.deleteContact);
 
