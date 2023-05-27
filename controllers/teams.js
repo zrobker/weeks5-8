@@ -9,30 +9,30 @@ const getAll = async (req, res) => {
     });
   };
 
-  const getSingle = async (req, res) => {
-    const teamName = new ObjectId(req.params.teamName);
-    const result = await mongodb.getDb().db().collection('teams').find({ _id: teamName });
-    result.toArray().then((lists) => {
-      res.setHeader('Content-Type', 'application/json');
-      res.status(200).json(lists[0]);
-    });
-  };
+  // const getSingle = async (req, res) => {
+  //   const teamName = new ObjectId(req.params.teamName);
+  //   const result = await mongodb.getDb().db().collection('teams').find({ _id: teamName });
+  //   result.toArray().then((lists) => {
+  //     res.setHeader('Content-Type', 'application/json');
+  //     res.status(200).json(lists[0]);
+  //   });
+  // };
   
-  const createTeam = async (req, res) => {
-    const team = {
-      teamName: req.body.teamName,
-      location: req.body.location,
-      stadiumName: req.body.stadiumName,
-      yearEstablished: req.body.yearEstablished,
-      numberChampionships: req.body.numberChampionships
-    };
-    const response = await mongodb.getDb().db().collection('teams').insertOne(team);
-    if (response.acknowledged) {
-      res.status(201).json(response);
-    } else {
-      res.status(500).json(response.error || 'Some error occurred while creating the contact.');
-    }
-  };
+  // const createTeam = async (req, res) => {
+  //   const team = {
+  //     teamName: req.body.teamName,
+  //     location: req.body.location,
+  //     stadiumName: req.body.stadiumName,
+  //     yearEstablished: req.body.yearEstablished,
+  //     numberChampionships: req.body.numberChampionships
+  //   };
+  //   const response = await mongodb.getDb().db().collection('teams').insertOne(team);
+  //   if (response.acknowledged) {
+  //     res.status(201).json(response);
+  //   } else {
+  //     res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+  //   }
+  // };
   
 //   const updateTeam = async (req, res) => {
 //     const userId = new ObjectId(req.params.id);
@@ -69,9 +69,9 @@ const getAll = async (req, res) => {
 //   };
   
   module.exports = {
-    getAll,
-    getSingle,
-    createTeam
+    getAll
+    // getSingle,
+    // createTeam
     // updateContact,
     // deleteContact
   };

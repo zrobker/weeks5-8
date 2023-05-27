@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/teams/": {
+    "/teams": {
       "get": {
         "description": "",
         "produces": [
@@ -28,70 +28,6 @@
         "responses": {
           "200": {
             "description": "OK"
-          }
-        }
-      }
-    },
-    "/teams/{teamName}": {
-      "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "teamName",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "teamName",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "teamName": {
-                  "example": "any"
-                },
-                "location": {
-                  "example": "any"
-                },
-                "stadiumName": {
-                  "example": "any"
-                },
-                "yearEstablished": {
-                  "example": "any"
-                },
-                "numberChampionships": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created"
-          },
-          "500": {
-            "description": "Internal Server Error"
           }
         }
       }
