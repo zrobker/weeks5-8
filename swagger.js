@@ -2,8 +2,8 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'My API',
-    description: 'Contact API'
+    title: 'NFL teams API',
+    description: 'NFL teams API'
   },
   host: 'zr-weeks5-8.onrender.com',
   schemes: ['https']

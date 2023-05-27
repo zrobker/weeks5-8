@@ -1,0 +1,23 @@
+{
+"team1": {
+      "teamName": "Steelers",
+      "location": "Pittsburgh",
+      "stadiumName": "Acrisure Stadium",
+      "yearEstablished": "1933",
+      "numberChampionships": "6"
+    },
+"team2": {
+    "teamName": "Dolphins",
+    "location": "Miami",
+    "stadiumName": "Hard Rock Stadium",
+    "yearEstablished": "1966",
+    "numberChampionships": "2"
+    },
+"team3": {
+    "teamName": "Jaguars",
+    "location": "Jacksonville",
+    "stadiumName": "TIAA Bank Field",
+    "yearEstablished": "1995",
+    "numberChampionships": "0"
+    }
+}

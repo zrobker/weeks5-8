@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-const contactsController = require('../controllers/contacts');
+const teamsController = require('../controllers/teams');
 
-router.get('/', contactsController.getAll);
+router.get('/', teamsController.getAll);
 
-router.get('/:id', contactsController.getSingle);
+router.get('/:teamName', teamsController.getSingle);
 
-router.post('/', contactsController.createContact);
+// router.post('/', teamsController.createContact);
 
-router.put('/:id', contactsController.updateContact);
+router.put('/:teamName', teamsController.updateTeam);
 
-router.delete('/:id', contactsController.deleteContact);
+// router.delete('/:id', teamsController.deleteContact);
 
 module.exports = router;

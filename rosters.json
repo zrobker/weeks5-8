@@ -1,0 +1,62 @@
+{
+    "roster1": {
+        "headCoach": "Mike Tomlin",
+        "qb1": "Kenny Picket",
+        "wr1": "George Pickens",
+        "wr2": "Diontae Johnson",
+        "wr3": "Allen Robinson",
+        "rb1": "Najee Harris",
+        "rb2": "Jaylen Warren",
+        "te1": "Pat Freiermuth",
+        "te2": "Darnell Washington",
+        "lb": "T.J. Watt",
+        "cb1": "Patrick Peterson",
+        "cb2": "Joey Porter Jr.",
+        "fs": "Minkah Fitzpatrick"
+        },
+    "roster2": {
+        "headCoach": "Mike Mcdaniel",
+        "qb1": "Tua Tagovailoa",
+        "wr1": "Tyreek Hill",
+        "wr2": "Jaylen Waddle",
+        "wr3": "Cedrick Wilson Jr.",
+        "rb1": "Raheem Mostert",
+        "rb2": "Jeff Wilson Jr.",
+        "te1": "Durham Smythe",
+        "te2": "Tyler Kroft",
+        "lb": "Jerome Baker",
+        "cb1": "Jalen Ramsey",
+        "cb2": "Xavien Howard",
+        "fs": "Jevon Holland"
+    },
+    "roster3": {
+        "headCoach": "Doug Pederson",
+        "qb1": "Trever Lawrence",
+        "wr1": "Christian Kirk",
+        "wr2": "Calvin Ridley",
+        "wr3": "Zay Jones",
+        "rb1": "Travis Etienne",
+        "rb2": "Tank Bigsby",
+        "te1": "Evan Engram",
+        "te2": "Brenton Strange",
+        "lb": "Josh Allen",
+        "cb1": "Tyson Campbell",
+        "cb2": "Darious Williams",
+        "fs": "Andre Cisco"
+    },
+    "roster4": {
+        "headCoach": "",
+        "qb1": "",
+        "wr1": "",
+        "wr2": "",
+        "wr3": "",
+        "rb1": "",
+        "rb2": "",
+        "te1": "",
+        "te2": "",
+        "lb": "",
+        "cb1": "",
+        "cb2": "",
+        "fs": ""
+    }
+}
