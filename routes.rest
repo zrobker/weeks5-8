@@ -2,7 +2,6 @@
 ### Get all teams
 GET http://localhost:8080/teams
 
-
 ### Get contact by id
 GET http://localhost:8080/teams/Steelers
 
@@ -44,21 +43,21 @@ DELETE http://localhost:8080/teams/646bf6c322eeb25a46c27217 HTTP/1.1
 
 // PRODUCTION Deploy
 ### Get all teams
-GET https://cse341-robker.onrender.com/teams
+GET https://zr-weeks5-8.onrender.com/teams
 
 ### Get contact by id
-GET https://cse341-robker.onrender.com/teams/646062bc89498c47257effc5
+GET https://zr-weeks5-8.onrender.com/teams
 
 ### Get contact by id
-GET https://cse341-robker.onrender.com/teams/646062d689498c47257effc7
+GET https://zr-weeks5-8.onrender.com/teams
 
 ### Get contact by id
-GET https://cse341-robker.onrender.com/teams/646062e789498c47257effc9
+GET https://zr-weeks5-8.onrender.com/teams
 
 
 
 ### Create contact
-POST https://cse341-robker.onrender.com/teams HTTP/1.1
+POST https://zr-weeks5-8.onrender.com/teams HTTP/1.1
 content-type: application/json
 
 {
@@ -71,7 +70,7 @@ content-type: application/json
 
 
 ### PUT contact
-PUT https://cse341-robker.onrender.com/teams/646062bc89498c47257effc5 HTTP/1.1
+PUT https://zr-weeks5-8.onrender.com/teams HTTP/1.1
 content-type: application/json
 
 {
@@ -82,4 +81,4 @@ content-type: application/json
     "birthday":"09/24/96"
 }
 ### DELETE contact
-DELETE https://cse341-robker.onrender.com/teams/646bf6f21d995ccd0cdaea77 HTTP/1.1
+DELETE https://zr-weeks5-8.onrender.com/teams HTTP/1.1

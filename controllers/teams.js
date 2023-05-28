@@ -9,14 +9,14 @@ const getAll = async (req, res) => {
     });
   };
 
-  // const getSingle = async (req, res) => {
-  //   const teamName = new ObjectId(req.params.teamName);
-  //   const result = await mongodb.getDb().db().collection('teams').find({ _id: teamName });
-  //   result.toArray().then((lists) => {
-  //     res.setHeader('Content-Type', 'application/json');
-  //     res.status(200).json(lists[0]);
-  //   });
-  // };
+  const getSingle = async (req, res) => {
+    const teamName = new ObjectId(req.params.teamName);
+    const result = await mongodb.getDb().db().collection('teams').find({ _id: teamName });
+    result.toArray().then((lists) => {
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(lists[0]);
+    });
+  };
   
   // const createTeam = async (req, res) => {
   //   const team = {
@@ -69,8 +69,8 @@ const getAll = async (req, res) => {
 //   };
   
   module.exports = {
-    getAll
-    // getSingle,
+    getAll,
+    getSingle
     // createTeam
     // updateContact,
     // deleteContact
