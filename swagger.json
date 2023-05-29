@@ -151,6 +151,188 @@
           }
         }
       }
+    },
+    "/rosters/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "headCoach": {
+                  "example": "any"
+                },
+                "qb1": {
+                  "example": "any"
+                },
+                "wr1": {
+                  "example": "any"
+                },
+                "wr2": {
+                  "example": "any"
+                },
+                "wr3": {
+                  "example": "any"
+                },
+                "rb1": {
+                  "example": "any"
+                },
+                "rb2": {
+                  "example": "any"
+                },
+                "te1": {
+                  "example": "any"
+                },
+                "te2": {
+                  "example": "any"
+                },
+                "lb": {
+                  "example": "any"
+                },
+                "cb1": {
+                  "example": "any"
+                },
+                "cb2": {
+                  "example": "any"
+                },
+                "fs": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/rosters/{id}": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "headCoach": {
+                  "example": "any"
+                },
+                "qb1": {
+                  "example": "any"
+                },
+                "wr1": {
+                  "example": "any"
+                },
+                "wr2": {
+                  "example": "any"
+                },
+                "wr3": {
+                  "example": "any"
+                },
+                "rb1": {
+                  "example": "any"
+                },
+                "rb2": {
+                  "example": "any"
+                },
+                "te1": {
+                  "example": "any"
+                },
+                "te2": {
+                  "example": "any"
+                },
+                "lb": {
+                  "example": "any"
+                },
+                "cb1": {
+                  "example": "any"
+                },
+                "cb2": {
+                  "example": "any"
+                },
+                "fs": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
     }
   }
 }

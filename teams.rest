@@ -3,7 +3,7 @@
 GET http://localhost:8080/teams
 
 ### Get team by id
-GET http://localhost:8080/teams/6472a84640e8e6df94d5896c
+GET http://localhost:8080/teams/6472231c40e8e6df94d58941
 
 ### Create team
 POST http://localhost:8080/teams HTTP/1.1
@@ -19,7 +19,7 @@ content-type: application/json
 
 
 ### PUT team
-PUT http://localhost:8080/teams/6472a85d40e8e6df94d58970 HTTP/1.1
+PUT http://localhost:8080/teams/6472231c40e8e6df94d58941 HTTP/1.1
 content-type: application/json
 
 {
