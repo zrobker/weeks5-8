@@ -2,17 +2,17 @@
 ### Get all teams
 GET http://localhost:8080/teams
 
-### Get contact by id
+### Get team by id
 GET http://localhost:8080/teams/6472a84640e8e6df94d5896c
 
-### Get contact by id
+### Get team by id
 GET http://localhost:8080/teams/646062d689498c47257effc7
 
-### Get contact by id
+### Get team by id
 GET http://localhost:8080/teams/646062e789498c47257effc9
 
 
-### Create contact
+### Create team
 POST http://localhost:8080/teams HTTP/1.1
 content-type: application/json
 
@@ -25,7 +25,7 @@ content-type: application/json
 }
 
 
-### PUT contact
+### PUT team
 PUT http://localhost:8080/teams/6474d6e7f819fe8f3236a002 HTTP/1.1
 content-type: application/json
 
@@ -37,7 +37,7 @@ content-type: application/json
     "numberChampionships": "0"
 }
 
-### DELETE contact
+### DELETE team
 DELETE http://localhost:8080/teams/6474d6e7f819fe8f3236a002 HTTP/1.1
 
 ---------------------------------------------------------------------------------
@@ -46,18 +46,18 @@ DELETE http://localhost:8080/teams/6474d6e7f819fe8f3236a002 HTTP/1.1
 ### Get all teams
 GET https://zr-weeks5-8.onrender.com/teams
 
-### Get contact by id
+### Get team by id
 GET https://zr-weeks5-8.onrender.com/teams
 
-### Get contact by id
+### Get team by id
 GET https://zr-weeks5-8.onrender.com/teams
 
-### Get contact by id
+### Get team by id
 GET https://zr-weeks5-8.onrender.com/teams
 
 
 
-### Create contact
+### Create team
 POST https://zr-weeks5-8.onrender.com/teams HTTP/1.1
 content-type: application/json
 
@@ -70,7 +70,7 @@ content-type: application/json
 }
 
 
-### PUT contact
+### PUT team
 PUT https://zr-weeks5-8.onrender.com/teams HTTP/1.1
 content-type: application/json
 
@@ -81,5 +81,5 @@ content-type: application/json
     "favoriteColor":"Pink",
     "birthday":"09/24/96"
 }
-### DELETE contact
+### DELETE team
 DELETE https://zr-weeks5-8.onrender.com/teams HTTP/1.1
