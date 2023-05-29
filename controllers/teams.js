@@ -37,7 +37,7 @@ const getAll = async (req, res) => {
   const updateTeam = async (req, res) => {
     const userId = new ObjectId(req.params.id);
     // be aware of updateOne if you only want to update specific fields
-    const contact = {
+    const team = {
       teamName: req.body.teamName,
       location: req.body.location,
       stadiumName: req.body.stadiumName,
@@ -48,7 +48,7 @@ const getAll = async (req, res) => {
       .getDb()
       .db()
       .collection('teams')
-      .replaceOne({ _id: userId }, contact);
+      .replaceOne({ _id: userId }, team);
     console.log(response);
     if (response.modifiedCount > 0) {
       res.status(204).send();

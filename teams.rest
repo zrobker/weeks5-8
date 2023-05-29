@@ -5,28 +5,21 @@ GET http://localhost:8080/teams
 ### Get team by id
 GET http://localhost:8080/teams/6472a84640e8e6df94d5896c
 
-### Get team by id
-GET http://localhost:8080/teams/646062d689498c47257effc7
-
-### Get team by id
-GET http://localhost:8080/teams/646062e789498c47257effc9
-
-
 ### Create team
 POST http://localhost:8080/teams HTTP/1.1
 content-type: application/json
 
 {
     "teamName": "Titans",
-    "location": "Jacksonville",
-    "stadiumName": "TIAA Bank Field",
-    "yearEstablished": "1995",
+    "location": "Tennessee",
+    "stadiumName": "Nissan Stadium",
+    "yearEstablished": "1959",
     "numberChampionships": "0"
 }
 
 
 ### PUT team
-PUT http://localhost:8080/teams/6474d6e7f819fe8f3236a002 HTTP/1.1
+PUT http://localhost:8080/teams/6472a85d40e8e6df94d58970 HTTP/1.1
 content-type: application/json
 
 {
@@ -47,13 +40,7 @@ DELETE http://localhost:8080/teams/6474d6e7f819fe8f3236a002 HTTP/1.1
 GET https://zr-weeks5-8.onrender.com/teams
 
 ### Get team by id
-GET https://zr-weeks5-8.onrender.com/teams
-
-### Get team by id
-GET https://zr-weeks5-8.onrender.com/teams
-
-### Get team by id
-GET https://zr-weeks5-8.onrender.com/teams
+GET https://zr-weeks5-8.onrender.com/teams/6472a84640e8e6df94d5896c
 
 
 
@@ -62,24 +49,25 @@ POST https://zr-weeks5-8.onrender.com/teams HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Cassie",
-    "lastName":"Adams",
-    "email":"cassieadams@test.com",
-    "favoriteColor":"Yellow",
-    "birthday":"04/12/87"
+    "teamName": "Titans",
+    "location": "Tennessee",
+    "stadiumName": "Nissan Stadium",
+    "yearEstablished": "1959",
+    "numberChampionships": "0"
 }
 
 
 ### PUT team
-PUT https://zr-weeks5-8.onrender.com/teams HTTP/1.1
+PUT https://zr-weeks5-8.onrender.com/teams/6472a85d40e8e6df94d58970 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Sarah",
-    "lastName":"Robker",
-    "email":"sarahrobker@test.com",
-    "favoriteColor":"Pink",
-    "birthday":"09/24/96"
+    "teamName": "JAGS",
+    "location": "Jacksonville",
+    "stadiumName": "TIAA Bank Field",
+    "yearEstablished": "1995",
+    "numberChampionships": "0"
 }
+
 ### DELETE team
 DELETE https://zr-weeks5-8.onrender.com/teams HTTP/1.1

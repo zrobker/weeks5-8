@@ -1,0 +1,105 @@
+// LOCALHOST
+### Get all rosters
+GET http://localhost:8080/rosters
+
+### Get rosters by id
+GET http://localhost:8080/rosters/6472a84640e8e6df94d5896c
+
+### Create rosters
+POST http://localhost:8080/rosters HTTP/1.1
+content-type: application/json
+
+{
+    "headCoach": "Mike Tomlin",
+    "qb1": "Kenny Picket",
+    "wr1": "George Pickens",
+    "wr2": "Diontae Johnson",
+    "wr3": "Allen Robinson",
+    "rb1": "Najee Harris",
+    "rb2": "Jaylen Warren",
+    "te1": "Pat Freiermuth",
+    "te2": "Darnell Washington",
+    "lb": "T.J. Watt",
+    "cb1": "Patrick Peterson",
+    "cb2": "Joey Porter Jr.",
+    "fs": "Minkah Fitzpatrick"
+}
+
+
+### PUT rosters
+PUT http://localhost:8080/rosters/6472a85d40e8e6df94d58970 HTTP/1.1
+content-type: application/json
+
+{
+    "headCoach": "Mike Tomlin",
+    "qb1": "Kenny Picket",
+    "wr1": "George Pickens",
+    "wr2": "Diontae Johnson",
+    "wr3": "Allen Robinson",
+    "rb1": "Najee Harris",
+    "rb2": "Jaylen Warren",
+    "te1": "Pat Freiermuth",
+    "te2": "Darnell Washington",
+    "lb": "T.J. Watt",
+    "cb1": "Patrick Peterson",
+    "cb2": "Joey Porter Jr.",
+    "fs": "Minkah Fitzpatrick"
+}
+
+### DELETE rosters
+DELETE http://localhost:8080/rosters/6474d6e7f819fe8f3236a002 HTTP/1.1
+
+---------------------------------------------------------------------------------
+
+// PRODUCTION Deploy
+### Get all rosters
+GET https://zr-weeks5-8.onrender.com/rosters
+
+### Get rosters by id
+GET https://zr-weeks5-8.onrender.com/rosters/6472a84640e8e6df94d5896c
+
+
+
+### Create rosters
+POST https://zr-weeks5-8.onrender.com/rosters HTTP/1.1
+content-type: application/json
+
+{
+   "headCoach": "Fake Coach",
+    "qb1": "Player 1",
+    "wr1": "Player 2",
+    "wr2": "Player 3",
+    "wr3": "Player 4",
+    "rb1": "Player 5",
+    "rb2": "Player 6",
+    "te1": "Player 7",
+    "te2": "Player 8",
+    "lb": "Player 9",
+    "cb1": "Player 10",
+    "cb2": "Player 11",
+    "fs": "Player 12"
+}
+
+
+### PUT rosters
+PUT https://zr-weeks5-8.onrender.com/rosters/6472a85d40e8e6df94d58970 HTTP/1.1
+content-type: application/json
+
+{
+   "headCoach": "Mike Tom",
+    "qb1": "Kenny Picket",
+    "wr1": "George Pickens",
+    "wr2": "Diontae Johnson",
+    "wr3": "Allen Robinson",
+    "rb1": "Najee Harris",
+    "rb2": "Jaylen Warren",
+    "te1": "Pat Freiermuth",
+    "te2": "Darnell Washington",
+    "lb": "T.J. Watt",
+    "cb1": "Patrick Peterson",
+    "cb2": "Joey Porter Jr.",
+    "fs": "Minkah Fitzpatrick"
+}
+
+### DELETE rosters
+DELETE https://zr-weeks5-8.onrender.com/rosters HTTP/1.1
