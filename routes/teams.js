@@ -5,12 +5,12 @@ const teamsController = require('../controllers/teams');
 
 router.get('/', teamsController.getAll);
 
-// router.get('/:teamName', teamsController.getSingle);
+router.get('/:id', teamsController.getSingle);
 
-// router.post('/', teamsController.createTeam);
+router.post('/', teamsController.createTeam);
 
-// router.put('/:teamName', teamsController.updateTeam);
+router.put('/:id', teamsController.updateTeam);
 
-// router.delete('/:id', teamsController.deleteContact);
+router.delete('/:id', teamsController.deleteTeam);
 
 module.exports = router;

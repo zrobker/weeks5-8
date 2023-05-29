@@ -18,13 +18,34 @@
         "responses": {}
       }
     },
-    "/teams": {
+    "/teams/": {
       "get": {
         "description": "",
         "produces": [
           "application/json"
         ],
         "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/teams/{teamName}": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "teamName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
