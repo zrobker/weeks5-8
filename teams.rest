@@ -19,11 +19,11 @@ content-type: application/json
 
 
 ### PUT team
-PUT http://localhost:8080/teams/6472231c40e8e6df94d58941 HTTP/1.1
+PUT http://localhost:8080/teams/6472a85d40e8e6df94d58970 HTTP/1.1
 content-type: application/json
 
 {
-    "teamName": "JAGS",
+    "teamName": "Jaguars",
     "location": "Jacksonville",
     "stadiumName": "TIAA Bank Field",
     "yearEstablished": "1995",
@@ -31,7 +31,7 @@ content-type: application/json
 }
 
 ### DELETE team
-DELETE http://localhost:8080/teams/6474d6e7f819fe8f3236a002 HTTP/1.1
+DELETE http://localhost:8080/teams/64760db67baef2229949b3e5 HTTP/1.1
 
 ---------------------------------------------------------------------------------
 
