@@ -17,8 +17,8 @@ const getAll = async (req, res) => {
 
   const getSingle = async (req, res) => {
     try {
-      const teamId = new ObjectId(req.params.id);
-      const result = await mongodb.getDb().db().collection('teams').find({ _id: teamId });
+      const teamName = req.params.teamName;
+      const result = await mongodb.getDb().db().collection('teams').find({ teamName: teamName });
       result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists[0]);
@@ -55,7 +55,7 @@ const getAll = async (req, res) => {
   
   const updateTeam = async (req, res) => {
     try {
-      const userId = new ObjectId(req.params.id);
+      const teamName = req.params.teamName;
       // be aware of updateOne if you only want to update specific fields
       const team = {
         teamName: req.body.teamName,
@@ -68,7 +68,7 @@ const getAll = async (req, res) => {
         .getDb()
         .db()
         .collection('teams')
-        .replaceOne({ _id: userId }, team);
+        .replaceOne({ teamName: teamName }, team);
       console.log(response);
       if (response.modifiedCount > 0) {
         res.status(204).send();
@@ -85,8 +85,8 @@ const getAll = async (req, res) => {
   
   const deleteTeam = async (req, res) => {
     try {
-      const userId = new ObjectId(req.params.id);
-      const response = await mongodb.getDb().db().collection('teams').remove({ _id: userId }, true);
+      const teamName = req.params.teamName;
+      const response = await mongodb.getDb().db().collection('teams').remove({ teamName: teamName }, true);
       console.log(response);
       if (response.deletedCount > 0) {
         res.status(200).send();

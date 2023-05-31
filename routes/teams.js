@@ -6,12 +6,12 @@ const validation = require('../middleware/validate.js');
 
 router.get('/', teamsController.getAll);
 
-router.get('/:id', teamsController.getSingle);
+router.get('/:teamName', teamsController.getSingle);
 
 router.post('/', validation.saveTeam, teamsController.createTeam);
 
-router.put('/:id', validation.saveTeam, teamsController.updateTeam);
+router.put('/:teamName', validation.saveTeam, teamsController.updateTeam);
 
-router.delete('/:id', teamsController.deleteTeam);
+router.delete('/:teamName', teamsController.deleteTeam);
 
 module.exports = router;

@@ -2,8 +2,8 @@
 ### Get all teams
 GET http://localhost:8080/teams
 
-### Get team by id
-GET http://localhost:8080/teams/6472231c40e8e6df94d58941
+### Get team by teamName
+GET http://localhost:8080/teams/Steelers
 
 ### Create team
 POST http://localhost:8080/teams HTTP/1.1
@@ -19,7 +19,7 @@ content-type: application/json
 
 
 ### PUT team
-PUT http://localhost:8080/teams/6472a85d40e8e6df94d58970 HTTP/1.1
+PUT http://localhost:8080/teams/Jaguars HTTP/1.1
 content-type: application/json
 
 {
@@ -31,7 +31,7 @@ content-type: application/json
 }
 
 ### DELETE team
-DELETE http://localhost:8080/teams/64760db67baef2229949b3e5 HTTP/1.1
+DELETE http://localhost:8080/teams/Titans HTTP/1.1
 
 ---------------------------------------------------------------------------------
 
@@ -39,8 +39,8 @@ DELETE http://localhost:8080/teams/64760db67baef2229949b3e5 HTTP/1.1
 ### Get all teams
 GET https://zr-weeks5-8.onrender.com/teams
 
-### Get team by id
-GET https://zr-weeks5-8.onrender.com/teams/6472a84640e8e6df94d5896c
+### Get team by teamName
+GET https://zr-weeks5-8.onrender.com/teams/Steelers
 
 
 
@@ -58,11 +58,11 @@ content-type: application/json
 
 
 ### PUT team
-PUT https://zr-weeks5-8.onrender.com/teams/6472a85d40e8e6df94d58970 HTTP/1.1
+PUT https://zr-weeks5-8.onrender.com/teams/Jaguars HTTP/1.1
 content-type: application/json
 
 {
-    "teamName": "JAGS",
+    "teamName": "Jaguars",
     "location": "Jacksonville",
     "stadiumName": "TIAA Bank Field",
     "yearEstablished": "1995",
@@ -70,4 +70,4 @@ content-type: application/json
 }
 
 ### DELETE team
-DELETE https://zr-weeks5-8.onrender.com/teams HTTP/1.1
+DELETE https://zr-weeks5-8.onrender.com/teams/Titans HTTP/1.1

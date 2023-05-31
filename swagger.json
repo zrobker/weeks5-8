@@ -75,7 +75,7 @@
         }
       }
     },
-    "/teams/{id}": {
+    "/teams/{teamName}": {
       "get": {
         "description": "",
         "produces": [
@@ -83,7 +83,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "teamName",
             "in": "path",
             "required": true,
             "type": "string"
@@ -102,7 +102,7 @@
         "description": "",
         "parameters": [
           {
-            "name": "id",
+            "name": "teamName",
             "in": "path",
             "required": true,
             "type": "string"
@@ -148,7 +148,7 @@
         "description": "",
         "parameters": [
           {
-            "name": "id",
+            "name": "teamName",
             "in": "path",
             "required": true,
             "type": "string"
