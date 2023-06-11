@@ -31,7 +31,7 @@ PUT http://localhost:8080/rosters/6472231c40e8e6df94d58941 HTTP/1.1
 content-type: application/json
 
 {
-    "headCoach": "Mike Tomlin",
+    "headCoach": "Mike Tom",
     "qb1": "Kenny Picket",
     "wr1": "George Pickens",
     "wr2": "Diontae Johnson",
