@@ -1,6 +1,5 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
-const { auth } = require('express-openid-connect');
 
 const getAll = async (req, res) => {
   try {
