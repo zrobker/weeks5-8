@@ -3,8 +3,9 @@ const router = express.Router();
 
 const rostersController = require('../controllers/rosters');
 const validation = require('../middleware/validate.js');
+const { auth, requiresAuth } = require('express-openid-connect');
 
-router.get('/', rostersController.getAll);
+router.get('/', requiresAuth(), (req.oidc.user), rostersController.getAll);
 
 router.get('/:id', rostersController.getSingle);
 
