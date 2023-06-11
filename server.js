@@ -36,7 +36,7 @@ const config = {
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
 
-app.get('/profile', requiresAuth(), (req, res) => {
+app.get('/api-docs', requiresAuth(), (req, res) => {
   res.send(JSON.stringify(req.oidc.user));
 });
 
