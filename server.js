@@ -44,4 +44,3 @@ app.get('/profile', requiresAuth(), (req, res) => {
 app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
-
