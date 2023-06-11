@@ -4,7 +4,6 @@ const { auth } = require('express-openid-connect');
 
 const getAll = async (req, res) => {
   try {
-    if (req.oidc.isAuthenticated()) {console.log(testing)};
     const result = await mongodb.getDb().db().collection('rosters').find();
     result.toArray().then((lists) => {
       res.setHeader('Content-Type', 'application/json');
