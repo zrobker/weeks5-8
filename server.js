@@ -40,7 +40,7 @@ app.get('/profile', requiresAuth(), (req, res) => {
   res.send(JSON.stringify(req.oidc.user));
 });
 
-app.get('/roster', requiresAuth(), (req, res) => {
+app.get('/rosters', requiresAuth(), (req, res) => {
   res.send((req.oidc.user));
 });
 
